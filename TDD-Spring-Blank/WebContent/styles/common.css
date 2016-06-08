@@ -1,0 +1,368 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}	
+
+div, p, span, li, td, b, i, em {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+input, a {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.yo-page {
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	min-height: 300px;
+}
+
+.yo-screen-1280 .yo-page {
+	width: 1260px;
+	width: 940px;
+}
+
+.yo-screen-960 .yo-page {
+	width: 940px;
+}
+
+.yo-screen-854 .yo-page {
+	width: 830px;
+}
+
+.yo-screen-800 .yo-page {
+	width: 780px;
+}
+
+.yo-screen-720 .yo-page {
+	width: 700px;
+}
+
+.yo-screen-640 .yo-page {
+	width: 620px;
+}
+
+.yo-screen-600 .yo-page {
+	width: 580px;
+}
+
+.yo-screen-540 .yo-page {
+	width: 520px;
+}
+
+.yo-screen-480 .yo-page {
+	width: 460px;
+}
+
+.yo-screen-360 .yo-page {
+	width: 340px;
+}
+
+.yo-screen-320 .yo-page {
+	width: 300px;
+}
+
+.yo-screen-240 .yo-page {
+	width: 220px;
+}
+
+.yo-logo {
+	text-align: center;
+}
+
+.yo-menu {	
+    width: 220px;	
+    margin: 10px auto;	
+    border-top: solid 1px whitesmoke;	
+    text-align: center;	
+    padding-top: 5px;
+}
+.yo-menu a {	
+    display: inline-block;	
+    margin-left: 3px;	
+    margin-right: 3px;
+}
+.yo-screen-1280 .yo-menu {	
+    width: 1260px;
+    width: 940px;
+}
+.yo-screen-960 .yo-menu {	
+    width: 940px;
+}
+.yo-screen-854 .yo-menu {	
+    width: 830px;
+}
+.yo-screen-800 .yo-menu {	
+    width: 780px;
+}
+.yo-screen-720 .yo-menu {	
+    width: 700px;
+}
+.yo-screen-640 .yo-menu {	
+    width: 620px;
+}
+.yo-screen-600 .yo-menu {	
+    width: 580px;
+}
+.yo-screen-540 .yo-menu {	
+    width: 520px;
+}
+.yo-screen-480 .yo-menu {	
+    width: 460px;
+}
+.yo-screen-360 .yo-menu {	
+    width: 340px;
+}
+.yo-screen-320 .yo-menu {	
+    width: 300px;
+}
+.yo-screen-240 .yo-menu {	
+    width: 220px;
+}
+.yo-copyright {	
+    color: gainsboro;	
+    white-space: pre-wrap;	
+    margin: 50px auto;	
+    overflow: hidden;	
+    border-top: solid 1px whitesmoke;
+    padding: 5px;
+}
+.yo-copyright a {	
+    color: gainsboro;
+}
+.yo-screen-1280 .yo-copyright {	
+    width: 1260px;
+    width: 940px;
+}
+.yo-screen-960 .yo-copyright {	
+    width: 940px;
+}
+.yo-screen-854 .yo-copyright {	
+    width: 830px;
+}
+.yo-screen-800 .yo-copyright {	
+    width: 780px;
+}
+.yo-screen-720 .yo-copyright {	
+    width: 700px;
+}
+.yo-screen-640 .yo-copyright {	
+    width: 620px;
+}
+.yo-screen-600 .yo-copyright {	
+    width: 580px;
+}
+.yo-screen-540 .yo-copyright {	
+    width: 520px;
+}
+.yo-screen-480 .yo-copyright {	
+    width: 460px;
+}
+.yo-screen-360 .yo-copyright {	
+    width: 340px;
+}
+.yo-screen-320 .yo-copyright {	
+    width: 300px;
+}
+.yo-screen-240 .yo-copyright {	
+    width: 220px;
+}
+
+.yo-message {
+	text-align: center;
+	color: red;
+	white-space: pre-wrap;
+	width: 200px;
+	border: solid 1px whitesmoke;
+	border-top: solid 5px #3bb15d;
+	margin: 20px auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.yo-screen-1280 .yo-message {
+	width: 1240px;
+	width: 920px;
+}
+
+.yo-screen-960 .yo-message {
+	width: 920px;
+}
+
+.yo-screen-854 .yo-message {
+	width: 810px;
+}
+
+.yo-screen-800 .yo-message {
+	width: 760px;
+}
+
+.yo-screen-720 .yo-message {
+	width: 680px;
+}
+
+.yo-screen-640 .yo-message {
+	width: 600px;
+}
+
+.yo-screen-600 .yo-message {
+	width: 560px;
+}
+
+.yo-screen-540 .yo-message {
+	width: 500px;
+}
+
+.yo-screen-480 .yo-message {
+	width: 440px;
+}
+
+.yo-screen-360 .yo-message {
+	width: 320px;
+}
+
+.yo-screen-320 .yo-message {
+	width: 280px;
+}
+
+.yo-screen-240 .yo-message {
+	width: 200px;
+}
+
+.yo-post {
+	width: 200px;
+	border: solid 1px whitesmoke;
+	border-top: solid 5px #3bb15d;
+	border-left: solid 1px #3bb15d;
+	border-radius: 0px 10px 0px 10px;
+	margin: 20px auto;
+	padding: 8px;
+	overflow: hidden;
+}
+
+.yo-screen-1280 .yo-post {
+	width: 1240px;
+	width: 920px;
+}
+
+.yo-screen-960 .yo-post {
+	width: 920px;
+}
+
+.yo-screen-854 .yo-post {
+	width: 810px;
+}
+
+.yo-screen-800 .yo-post {
+	width: 760px;
+}
+
+.yo-screen-720 .yo-post {
+	width: 680px;
+}
+
+.yo-screen-640 .yo-post {
+	width: 600px;
+}
+
+.yo-screen-600 .yo-post {
+	width: 560px;
+}
+
+.yo-screen-540 .yo-post {
+	width: 500px;
+}
+
+.yo-screen-480 .yo-post {
+	width: 440px;
+}
+
+.yo-screen-360 .yo-post {
+	width: 320px;
+}
+
+.yo-screen-320 .yo-post {
+	width: 280px;
+}
+
+.yo-screen-240 .yo-post {
+	width: 200px;
+}
+
+.yo-post .yo-title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px whitesmoke;
+  font-weight: bold;
+  color: #4c90f6;
+}
+
+.yo-post .yo-title a {
+  text-decoration: none;
+  color: #4c90f6;
+}
+
+.yo-post .yo-title a:hover {
+  text-decoration: underline;
+}
+
+.yo-post .yo-time {
+  margin-top: 10px;
+  padding-top: 10px;
+  color: grey;
+  border-top: solid 1px whitesmoke;
+}
+
+.yo-screen-1280 .yo-page .yo-post img {
+	max-width: 1220px;
+	max-width: 900px;
+}
+
+.yo-screen-960 .yo-page .yo-post img {
+	max-width: 900px;
+}
+
+.yo-screen-854 .yo-page .yo-post img {
+	max-width: 790px;
+}
+
+.yo-screen-800 .yo-page .yo-post img {
+	max-width: 740px;
+}
+
+.yo-screen-720 .yo-page .yo-post img {
+	max-width: 660px;
+}
+
+.yo-screen-640 .yo-page .yo-post img {
+	max-width: 580px;
+}
+
+.yo-screen-600 .yo-page .yo-post img {
+	max-width: 540px;
+}
+
+.yo-screen-540 .yo-page .yo-post img {
+	max-width: 480px;
+}
+
+.yo-screen-480 .yo-page .yo-post img {
+	max-width: 420px;
+}
+
+.yo-screen-360 .yo-page .yo-post img {
+	max-width: 300px;
+}
+
+.yo-screen-320 .yo-page .yo-post img {
+	max-width: 260px;
+}
+
+.yo-screen-240 .yo-page .yo-post img {
+	max-width: 180px;
+}
+

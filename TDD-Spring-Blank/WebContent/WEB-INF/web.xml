@@ -31,4 +31,8 @@
 		</listener-class>
 	</listener>
 
+    <welcome-file-list>
+        <welcome-file>index.yo</welcome-file>
+    </welcome-file-list>
+
 </web-app>

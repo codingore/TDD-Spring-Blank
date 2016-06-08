@@ -8,11 +8,65 @@
    http://www.springframework.org/schema/context 
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-   <context:component-scan base-package="blank" />
+   	<context:component-scan base-package="blank" />
 
-   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-      <property name="prefix" value="/WEB-INF/jsp/" />
-      <property name="suffix" value=".jsp" />
-   </bean>
+   	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://tdd-spring-blank.com:3306/tdd-spring-blank" />
+		<property name="username" value="tdd-spring-blank" />
+		<property name="password" value="57551fdfad2c1" />
+	</bean>
+
+	<!-- Hibernate 4 SessionFactory Bean definition -->
+	<bean id="hibernate4AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>blank.models.User</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				
+				<prop key="hibernate.c3p0.min_size">5</prop>
+  				<prop key="hibernate.c3p0.max_size">20</prop>
+  				<prop key="hibernate.c3p0.timeout">60</prop>
+  				<prop key="hibernate.c3p0.max_statements">50</prop>
+  				<prop key="hibernate.c3p0.idle_test_period">60</prop>
+				
+			</props>
+		</property>
+	</bean>
+
+	<bean id="schemaDAO" class="blank.models.SchemaDAOImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	
+	<bean id="schemaService" class="blank.models.SchemaServiceImpl">
+		<property name="schemaDAO" ref="schemaDAO"></property>
+	</bean>
+	
+	<bean id="userDAO" class="blank.models.UserDAOImpl">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
+	
+	<bean id="userService" class="blank.models.UserServiceImpl">
+		<property name="userDAO" ref="userDAO"></property>
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</bean>
 
 </beans>
