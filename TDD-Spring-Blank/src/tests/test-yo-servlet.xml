@@ -25,7 +25,7 @@
 	</bean>
 
 	<!-- Hibernate 5 SessionFactory Bean definition -->
-	<bean id="hibernate4AnnotatedSessionFactory"
+	<bean id="hibernate5AnnotatedSessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
