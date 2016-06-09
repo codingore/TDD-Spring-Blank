@@ -24,9 +24,9 @@
 		<property name="password" value="57551fdfad2c1" />
 	</bean>
 
-	<!-- Hibernate 4 SessionFactory Bean definition -->
-	<bean id="hibernate4AnnotatedSessionFactory"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<!-- Hibernate 5 SessionFactory Bean definition -->
+	<bean id="hibernate5AnnotatedSessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
 			<list>
@@ -50,7 +50,7 @@
 	</bean>
 
 	<bean id="schemaDAO" class="blank.models.SchemaDAOImpl">
-		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+		<property name="sessionFactory" ref="hibernate5AnnotatedSessionFactory" />
 	</bean>
 	
 	<bean id="schemaService" class="blank.models.SchemaServiceImpl">
@@ -58,15 +58,15 @@
 	</bean>
 	
 	<bean id="userDAO" class="blank.models.UserDAOImpl">
-		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+		<property name="sessionFactory" ref="hibernate5AnnotatedSessionFactory" />
 	</bean>
 	
 	<bean id="userService" class="blank.models.UserServiceImpl">
 		<property name="userDAO" ref="userDAO"></property>
 	</bean>
 	
-	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="hibernate5AnnotatedSessionFactory" />
 	</bean>
 
 </beans>

@@ -71,10 +71,10 @@ function yo_screen_changed_240() {
 	<div class="yo-title"><a href="<%=ROOT%>/login.yo">Login</a></div>
 	<div class="yo-body">
 		<form:form action="${ROOT}/login.yo" commandName="user">
-		<p><form:input path="email" class="form-control" placeholder="Enter email" /></p>
-		<p><form:input path="password" type="password" class="form-control" placeholder="Enter password" /></p>
-		<p class="text-center"><input type="submit" class="btn btn-success" value="Login" /></p>
-		<p class="text-warning">${message}</p>
+		<p><form:input id="emailE" path="email" class="form-control" placeholder="Enter email" /></p>
+		<p><form:input id="passwordE" path="password" type="password" class="form-control" placeholder="Enter password" /></p>
+		<p class="text-center"><input id="loginE" type="submit" class="btn btn-success" value="Login" /></p>
+		<p class="text-warning" id="messageE">${message}</p>
 		</form:form>
 	</div>
 </div>
